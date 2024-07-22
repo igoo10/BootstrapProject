@@ -10,7 +10,10 @@ body {
 
 header {
     background-color: #FF6347; 
-    font-family: "Bubblegum Sans";   
+    font-family: "Bubblegum Sans"; 
+    position: sticky; 
+    top:0;
+    z-index: 111;  
 }
 
 nav {
@@ -19,7 +22,6 @@ nav {
     justify-content: space-between;
     padding: 10px;  
     
-    position: sticky; 
     font-weight: bold;
     font-size: 20px; 
 }
@@ -46,8 +48,85 @@ a:hover {
 .herosection1{
     padding: 2px 2px 2px 2px;
 }
+.herosection1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.herosection1 > div {
+    width: 100%;
+    max-width: 600px; /* Example width */
+}
+
+.herosection1 form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.herosection1 form  {
+    flex: 1;
+    margin-right: 10px;
+}
+.search> .searchspace {
+    border-radius: 10px;
+    width: 40%;
+    height: 30px;
+    border: solid 2px #FF6347;
+}
+.herosection1 .search .input-group {
+    display: flex;
+    align-items: center;
+}
+
+.herosection1 .search .form-control {
+    flex: 1; /* Take remaining space */
+    border-radius: 5px 0 0 5px; /* Rounded corners for left side of input */
+    margin-right: 0; /* Remove default margin */
+}
+
+.herosection1 .search .btn {
+    border-radius: 0 5px 5px 0; /* Rounded corners for right side of button */
+}
+
+.search .input-group {
+    display: flex;
+    align-items: center;
+}
+
+.search .searchspace {
+    flex: 1;
+    border-radius: 5px 0 0 5px;
+    padding: 10px; 
+    border: 2px solid #ccc; 
+}
+.search .input-group-text {
+    background-color: #fff; 
+    border: 1px solid #ccc;
+    border-left: 0;
+    border-radius: 0 5px 5px;
+    padding: 10px; 
+    display: flex;
+    align-items: center; 
+    cursor: pointer;
+}
+.input-group-text:hover{
+    background-color: yellow;
+}
+
+.search .material-icons {
+    font-size: 24px;
+}
+
+
+
+
 .herosection2 {
-    background-image: url('../assets/premium_photo-1694141253763-209b4c8f8ace.avif');
+    background-image: url('../bootstrap-project1/premium_photo-1694141253763-209b4c8f8ace.avif');
     background-size: cover;
     background-position: center;
     padding: 200px 20px;
